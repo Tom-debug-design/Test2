@@ -1,1 +1,1 @@
-web: python atomicbot_dispatch_goal.py
+web: gunicorn app:app --bind 0.0.0.0:$PORT --worker-class sync
